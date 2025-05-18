@@ -1,11 +1,11 @@
 flask==2.0.1
-torch==2.0.1
-torchaudio==2.0.1
-numpy==1.24.3
+torch==2.0.0+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torchaudio==2.0.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+numpy==1.23.5
 scipy==1.10.1
 PyYAML==6.0.1
-espnet==202401
-espnet2==202401
+espnet==202412
+espnet2==202412
 soundfile==0.12.1
 requests==2.31.0
 matplotlib==3.7.1

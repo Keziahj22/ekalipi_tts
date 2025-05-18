@@ -98,4 +98,5 @@ def synthesize():
         }), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=4005, debug=True) 
+    port = int(os.environ.get("PORT", 10000))  # Use Render's PORT or fallback to 10000
+    app.run(host='0.0.0.0', port=port) 
