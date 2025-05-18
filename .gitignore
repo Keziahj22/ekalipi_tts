@@ -56,4 +56,12 @@ static/audio/*
 
 # Logs
 *.log
-logs/ 
+logs/
+
+# Model files
+Fastspeech2_HS/**/model.pth
+Fastspeech2_HS/**/config.yaml
+Fastspeech2_HS/**/energy_stats.npz
+Fastspeech2_HS/**/feats_stats.npz
+Fastspeech2_HS/**/pitch_stats.npz
+Fastspeech2_HS/**/feats_type 

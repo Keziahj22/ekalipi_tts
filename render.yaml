@@ -2,7 +2,13 @@ services:
   - type: web
     name: marathi-tts
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install -r requirements.txt
+      # Download model files during build
+      mkdir -p Fastspeech2_HS/marathi/male/model/
+      # You'll need to replace these URLs with actual URLs where you host the model files
+      curl -L -o Fastspeech2_HS/marathi/male/model/model.pth "YOUR_MODEL_DOWNLOAD_URL"
+      curl -L -o Fastspeech2_HS/marathi/male/model/config.yaml "YOUR_CONFIG_DOWNLOAD_URL"
     startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
