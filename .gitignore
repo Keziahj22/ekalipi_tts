@@ -64,4 +64,7 @@ Fastspeech2_HS/**/config.yaml
 Fastspeech2_HS/**/energy_stats.npz
 Fastspeech2_HS/**/feats_stats.npz
 Fastspeech2_HS/**/pitch_stats.npz
-Fastspeech2_HS/**/feats_type 
+Fastspeech2_HS/**/feats_type
+
+# Git LFS
+.gitattributes 
